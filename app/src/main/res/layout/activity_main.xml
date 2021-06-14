@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AdActivity">
+
+    <EditText
+        android:id="@+id/edt_friendnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your friend number \n Ex:9876543210 \n(without country code)"
+       />
+
+    <Button
+        android:id="@+id/btn_getcontactdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_friendnumber"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical|fill_vertical"
+        android:text="Get My Contact Details"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/txt_mycontactdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_getcontactdetails"
+        android:gravity="center"/>
+    <!-- Editext for Search -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:alpha="0.3"
+        android:text="Your data stil procesing.. \n You are not live yet, \n your friends can't see you.. \n make sure your internet is working good \n reopen the App to be discovered by your friends." />
+
+
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:hint="Search products.." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

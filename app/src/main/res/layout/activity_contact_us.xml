@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:gravity="center"         android:fontFamily="sans-serif-condensed-medium"
+
+    android:layout_height="match_parent"
+    tools:context=".ContactUs"     android:background="@color/bg_screen1"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/editText7"         android:fontFamily="sans-serif-condensed-medium"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Enter Mail ID"
+        android:visibility="gone"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:ems="10"
+        android:textColor="#fff"
+        android:hint="Enter Subject "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:textColorHint="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type Message"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendmail"
+        android:elevation="10dp"
+        android:background="@drawable/buttonshape"
+        android:padding="1dp"
+        android:shadowColor="#FBC02D"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColorHighlight="#FBC02D"
+        android:textColor="#FFF81F"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical|fill_vertical"
+
+
+        android:text="send mail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/banner_unit_id"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

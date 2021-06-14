@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/bg_screen1"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".AboutDev">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:autoLink="web"
+
+        android:focusable="true"
+        android:gravity="center"
+        android:text="\nAbout Developer:\nK P Ranjith Kumar,\nranjithpsundar@gmail.com,\nSenior Android Trainer and Developer,\nFounder and CEO of AndroidManifester,\nwww.AndroidManifester.com,\nBit.ly/AndroidManifester\n"
+        android:textColor="#673AB7"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="23sp"
+
+        android:textColor="@color/colorPrimary"
+
+        android:text="\nPlease fill this form \n if you want to learn Android Application Development from AndroidManifester\n \nAndroidManifester Contact form" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#673AB7"
+
+        android:autoLink="web"
+        android:textSize="21sp"
+        android:focusable="true"
+        android:text="http://bit.ly/AMiForm" />
+</LinearLayout>

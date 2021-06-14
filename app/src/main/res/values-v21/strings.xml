@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_denied_txt">Permission Error.. Please Try Again</string>
+</resources>
